@@ -43,24 +43,12 @@ If you are requested to list 5 elements/records and there are less than 5 such e
 Query 1:
 List the 5 distinct Unique Carriers (UniqueCarrier) that suffer the largest number of flight delays (either on arrival or on departure) and the number of delays they had in descending order (with respect to the number of delays).
   
-Example of output:
-################## 1st Query ###############
-WN 5665
-AA 809
-B6 396
-EV 330
-UA 252
+
   
 Query 2:
 List the top 5 distinct cities in which departure delays occur the most (irrespective of the length of the delay) in descending order (with respect to number of delays).
   
-Example of output:
-################## 2nd Query ###############
-Chicago 752
-Las Vegas 695
-Dallas 425
-Los Angeles 375
-Phoenix 358
+
   
 Query 3:
   
@@ -68,12 +56,7 @@ List the 2nd to 6th distinct destinations (Dest) that has the highest total amou
 destinations with the highest total arrival delay minutes by a1, a2, a3, a4, a5, a6, then the program should output a2, a3 ,a4 ,a5 ,a6 (together with the total arrival delay minutes for each destination, as shown in the example below).
 Example of output:
   
-################## 3rd Query ###############
-ORD 16073
-OAK 13655
-LAX 13617
-PHX 12817
-SAN 11121
+
   
 Query 4:
 For every state that has at least 10 airports, list the state and the number of the airports.
