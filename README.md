@@ -10,21 +10,21 @@ Initialising a connection to the postgres server
 Reading/writing tables in the databases
 2. The program should check if the tables (and possibly views) it creates already exist in the database, and only if they do, drop them before their creation. For tables you can simply do:
 
-'DROP TABLE IF EXISTS <table-name>'
+  'DROP TABLE IF EXISTS <table-name>'
 
-Reading the delayedFlights and airport files
-The delayedFlights file available on moodle is a file with the following format:
+  Reading the delayedFlights and airport files
+  The delayedFlights file available on moodle is a file with the following format:
 
-Each line in delayedFlights consists of a record about a delayed flight.
-The attributes are as follows:
+  Each line in delayedFlights consists of a record about a delayed flight.
+  The attributes are as follows:
 
-ID_of_Delayed_Flight, Month, DayofMonth, DayOfWeek, DepTime, ScheduledDepTime, ArrTime, ScheduledArrTime, 
-UniqueCarrier, FlightNum, ActualFlightTime, scheduledFlightTime, AirTime, ArrDelay, DepDelay, Orig, Dest, Distance
+  ID_of_Delayed_Flight, Month, DayofMonth, DayOfWeek, DepTime, ScheduledDepTime, ArrTime,     ScheduledArrTime, 
+  UniqueCarrier, FlightNum, ActualFlightTime, scheduledFlightTime, AirTime, ArrDelay, DepDelay,   Orig, Dest, Distance
 
-The attributes’ meaning are self explanatory.
-The airport file available on Moodle lists US Airports, sorted by Airport Code, with the format being:
+  The attributes’ meaning are self explanatory.
+  The airport file available on Moodle lists US Airports, sorted by Airport Code, with the format being:
 
-airportCode, airportName, City, State.
+  airportCode, airportName, City, State.
 3. The program now should read the two files, delayedFlights and airport above, and insert the information it reads to the database, in an appropriate way that would suite the requirements below (namely, it should insert it to tables in the way suitable to answer the queries below).
 
 4. Make sure that the basic primary keys and foreign keys are specified so that users cannot delete a record containing information referred to (implicitly) by another table.
